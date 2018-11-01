@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 response.data.candidates.forEach(function(candidate){
                     var outputName = document.createElement('h3');
                     var outputVotes = document.createElement('h4');
-                    var outputLi = document.createElement('li');
+                    var outputLi = document.createElement('li');                 
                     var br = document.createElement("br");
                     var hr = document.createElement("hr");
                     outputName.innerHTML = "Name: " + candidate.name;
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     outputLi.appendChild(hr);
                     outputLi.appendChild(outputName);
                     outputLi.appendChild(outputVotes);
-                    outputLi.appendChild(hr);                    
+                    outputLi.appendChild(hr);
                     outputUl.appendChild(outputLi);
                     document.body.appendChild(outputUl);
                 });
